@@ -5,7 +5,7 @@ export const TaskEdit = (props) => {
         <label className="todo-label" htmlFor={props.id}>
           New name for {props.name}
         </label>
-        <input id={props.id} className="todo-text" type="text" value={props.newName} onChange={props.handleChange} />
+        <input id={props.id} className="todo-text" type="text" value={props.newName} onChange={props.handleChange} placeHolder={props.name} />
       </div>
       <div className="btn-group">
         <button type="button" className="btn todo-cancel" onClick={() => props.setEditing(false)}>
